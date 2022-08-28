@@ -12,16 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    
-    - name: Set up Terraform
-      uses: hashicorp/setup-terraform@v2
 
     - name: Set up Go
       uses: actions/setup-go@v3
 
     - name: Go Example
       uses: DuncanScu/GoGitActionExample@v1
-      
-    - name: Run Terraform Commands
-      run: terraform plan
-    
